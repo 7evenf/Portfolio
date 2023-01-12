@@ -1,0 +1,97 @@
+.resume {
+    /* background-color: rgb(255, 245, 250); */
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        padding-top: 6px;
+        &:before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 89px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 42px;
+            margin-bottom: 0;
+            &:before {
+                content: '';
+                position: absolute;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: -8px;
+                    width: 1px;
+                    height: calc(100% + 8px);
+                    background: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content:'';
+            position: absolute;
+            top: 48px;
+            height: 1px;
+            width: 45px;
+            background: #000;
+        }
+        &-university {
+            margin-bottom: 0;
+        }
+        &-location {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        &-head {
+            position: relative;
+            padding: 30px 0 0 100px;
+        }
+        &-icon {
+            position: absolute;
+            @include before_circle;
+            left: 45px;
+            top: 36px;
+            img {
+                padding-top: 8px;
+                padding-left: 17px;
+            }
+        }
+        &-body {
+            padding: 12px 0 0 43px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
