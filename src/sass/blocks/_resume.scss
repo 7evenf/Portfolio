@@ -1,21 +1,5 @@
 .resume {
-    /* background-color: rgb(255, 245, 250); */
     padding-top: 120px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        padding-top: 6px;
-        &:before {
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-        margin-top: 6px;
-    }
     &__wrapper {
         margin-top: 60px;
         padding: 0 89px 0 65px;

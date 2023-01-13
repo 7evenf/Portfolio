@@ -9,3 +9,10 @@ hamburger.addEventListener('click', () => {
 close.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const counters = document.querySelectorAll('.skills__raitings-percent'),
+    lines = document.querySelectorAll('.skills__raitings-scale span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});

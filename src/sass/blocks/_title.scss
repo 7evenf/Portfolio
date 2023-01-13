@@ -9,10 +9,6 @@
     &_fz16 {
         font-size: 16px;
         line-height: 24px;
-        transition: .7s all;
-        &:hover {
-            text-shadow: 2px 2px 20px #fff;
-        }
         &_white {
             color: #fff;
         }
@@ -24,12 +20,24 @@
     &_fz48 {
         color: #fff;
         font-size: 48px;
-        transition: .7s all;
-        &:hover {
-            text-shadow: 2px 2px 20px #fff;
-        }
     }
     &_about {
         color: #000;
+    }
+    &__section-title { 
+        text-align: center;
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        padding-top: 6px;
+        &:before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+    }
+    &__section-subtitle {
+        text-align: center;
     }
 }
