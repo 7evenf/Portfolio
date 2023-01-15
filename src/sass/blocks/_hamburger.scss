@@ -14,7 +14,7 @@
             display: block;
             width: 30px;
             height: 3px;
-            background: rgb(255, 255, 220);
+            background: $main-color;
             border-radius: 4px;
             &:nth-child(2) {
                 width: 36px;

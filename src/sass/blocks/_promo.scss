@@ -18,6 +18,7 @@
     }
     &__subtitle {
         margin-top: 9px;
+        width: 536px;
         span {
             cursor: default;
             transition: .7s all;
@@ -39,16 +40,12 @@
         text-align: center;
         color: #fff;
         transition: 0.5s all;
-        &:hover:first-child {
+        &:hover {
             color: #fff;
             text-decoration: none;
-            box-shadow: 0 0 20px rgba(255, 192, 203, 1);
-        }
-        &_color-change {
-            &:hover {
-                color: $main-color;
-                text-decoration: none;
-            }
+            text-shadow: 0 0 20px rgba(255, 192, 203, 1);
+            color: $main-color;
+            text-decoration: none;
         }
     }
 }

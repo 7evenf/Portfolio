@@ -10,17 +10,20 @@
     z-index: 2;
     &__link {
         transition: 0.5s all;
+        svg path {
+            fill: $main-color;
+        }
         &:hover {
-            box-shadow: 2px 2px 70px rgba(255, 192, 203, 1);
+            box-shadow: 2px 2px 70px #fff;
             svg path {
-                fill: $main-color;
+                fill: #fff;
             }
         }
     }
     &__divider {
         height: 70px;
         width: 2px;
-        background: #fff;
+        background: $main-color;
     }
     &__text {
         height: 148px;
@@ -29,7 +32,7 @@
             width: 148px;
             display: block;
             transform: rotate(-90deg) translate(-40%, -260%);
-            color: #fff;
+            color: $main-color;
             font-weight: 700;
             font-size: 16px;
         }
